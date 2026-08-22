@@ -1,0 +1,303 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f3f6fb;
+  color: #172033;
+}
+
+button {
+  border: none;
+  border-radius: 6px;
+  background: #2563eb;
+  color: white;
+  padding: 11px 18px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   CONNECT BUTTON
+========================= */
+
+.connect-button {
+  background: #2563eb;
+}
+
+.connect-button:hover {
+  background: #1d4ed8;
+}
+
+/* =========================
+   DISCONNECT BUTTON
+========================= */
+
+.disconnect-button {
+  background: #dc2626;
+}
+
+.disconnect-button:hover {
+  background: #b91c1c;
+}
+
+/* =========================
+   INPUT
+========================= */
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 7px;
+  margin-bottom: 18px;
+  border: 1px solid #cbd5e1;
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/* =========================
+   APP
+========================= */
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  padding: 35px 20px;
+}
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.header h1 {
+  margin: 0;
+  font-size: 30px;
+}
+
+.header p {
+  color: #64748b;
+  margin-top: 8px;
+}
+
+/* =========================
+   CARD
+========================= */
+
+.card {
+  background: white;
+  padding: 25px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  box-shadow:
+    0 3px 15px rgba(0, 0, 0, 0.06);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+.description {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+/* =========================
+   WALLET INFORMATION
+========================= */
+
+.info-grid {
+  display: grid;
+  grid-template-columns:
+    repeat(4, 1fr);
+  gap: 12px;
+}
+
+.info-box {
+  border: 1px solid #dbe3ef;
+  border-radius: 7px;
+  padding: 15px;
+}
+
+.info-box span {
+  display: block;
+  color: #64748b;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.info-box strong {
+  font-size: 14px;
+}
+
+.wallet-full {
+  margin-top: 18px;
+  padding: 12px;
+  background: #f1f5f9;
+  border-radius: 6px;
+  word-break: break-all;
+}
+
+/* =========================
+   SUCCESS
+========================= */
+
+.success {
+  background: #dcfce7;
+  border: 1px solid #86efac;
+  color: #166534;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* =========================
+   ERROR
+========================= */
+
+.error {
+  background: #fee2e2;
+  border: 1px solid #fca5a5;
+  color: #991b1b;
+  padding: 12px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+}
+
+/* =========================
+   HINT
+========================= */
+
+.hint {
+  color: #64748b;
+  font-size: 13px;
+}
+
+/* =========================
+   ROW
+========================= */
+
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row input {
+  flex: 1;
+}
+
+.row button {
+  height: 42px;
+  white-space: nowrap;
+}
+
+/* =========================
+   PROJECT DETAILS
+========================= */
+
+.project-details {
+  margin-top: 20px;
+  padding: 20px;
+  background: #f8fafc;
+  border: 1px solid #dbe3ef;
+  border-radius: 8px;
+}
+
+.project-details h3 {
+  margin-top: 0;
+}
+
+.project-details p {
+  word-break: break-word;
+}
+
+/* =========================
+   STATUS
+========================= */
+
+.status {
+  display: inline-block;
+  padding: 5px 9px;
+  background: #dbeafe;
+  color: #1d4ed8;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+/* =========================
+   WORKFLOW
+========================= */
+
+.workflow {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e2e8f0;
+}
+
+.workflow button {
+  margin-right: 10px;
+}
+
+/* =========================
+   STATUS LIST
+========================= */
+
+.status-list {
+  line-height: 2;
+  color: #475569;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  text-align: center;
+  color: #64748b;
+  padding: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+
+  .workflow button {
+    display: block;
+    margin-bottom: 10px;
+  }
+}
